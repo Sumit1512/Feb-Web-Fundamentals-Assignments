@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <div class="container">
+        <div style="width: 238px; margin: auto;"><h1>Online Survey</h1></div>
+        <form action="Noaction.php">
+            <div class="form_group">
+                <label for="name">Name: &nbsp;</label>
+                <input type="text" id="name" name="name" placeholder="Ex.John" size="81">
+            </div>
+            <div class="form_group">
+                <label for="email">Email: &nbsp;&nbsp;</label>
+                <input type="email" id="email" name="email" placeholder="Ex.John@gmail.com" size="81">
+            </div>
+            <div class="form_group">
+                <label for="number">Phone:&nbsp;</label>
+                <input type="number" id="number" name="number" placeholder="Ex.7854962587" size="50">
+            </div>
+            <div class="form_group">
+                <label for="age">Age Group:</label>
+                <select name="age" id="age">
+                    <option value="young">20-30</option>
+                    <option value="adult">31-45</option>
+                    <option value="old_age">45+</option>
+                </select>
+            </div>
+            <div class="form_group">Gender:
+                <input type="radio" id="gender1" name="gender">
+                <label for="gender1">Male</label>
+                <input type="radio" id="gender2" name="gender">
+                <label for="gender2">Female</label>
+                <input type="radio" id="gender3" name="gender">
+                <label for="gender3">Others</label>
+            </div>
+            <div class="form_group">Marritial Status:
+                <input type="radio" id="status1" name="status">
+                <label for="status1">Married</label>
+                <input type="radio" id="status2" name="status">
+                <label for="status2">Un-Married</label>
+            </div>
+            <div class="form_group">
+                <label for="area">Locality:&nbsp;&nbsp;&nbsp;</label>
+                <select name="area" id="area">
+                    <option value="village" selected>Urban</option>
+                    <option value="city" >Rural</option>
+                </select>
+            </div>
+            <div class="form_group">
+                <label for="shift">Shift: &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                <select name="shift" id="shift">
+                    <option value="day" selected>Day</option>
+                    <option value="night" >Night</option>
+                </select>
+            </div>
+            <div class="form_group2">
+                <label for="education" style="margin-left: 15px;">Education:</label>
+                <select name="education" id="education">
+                    <option value="12th" >Higher-Secondary</option>
+                    <option value="grad" selected>Graduation</option>
+                    <option value="pgrad" >Post-Grad</option>
+                </select>
+            <div class="form_group2" style="margin-left: 15px; margin-top: 15px; ">Good thing about Us:
+                <input type="checkbox" id="about1">
+                <label for="about1">Working Environment</label>
+                <input type="checkbox" id="about2">
+                <label for="about2">Allowances</label>
+                <input type="checkbox" id="about3">
+                <label for="about3">Job-Timing</label>
+            </div>
+            <div class="form_group">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="btn"><Button>Submit</Button></div>
+        </form>
+    </div>
+</body>
+</html>
